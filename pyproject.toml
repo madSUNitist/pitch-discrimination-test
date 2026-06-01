@@ -1,0 +1,15 @@
+[project]
+name = "pitch-discrimination-test"
+version = "0.1.0"
+description = "Psychoacoustic pitch discrimination test using adaptive staircase procedure"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.4.4",
+    "scipy>=1.17.1",
+    "sounddevice>=0.5.5",
+]
+
+[[tool.uv.index]]
+url = "https://mirrors.aliyun.com/pypi/simple"
+default = true
