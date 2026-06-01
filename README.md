@@ -24,7 +24,6 @@ Activate the virtual environment or use `uv run`:
 ```bash
 # Option A: activate venv, then run directly
 .venv\Scripts\activate   # Windows
-.venv\Scripts\activate   # Windows
 source .venv/bin/activate # Linux / macOS
 python main.py
 
