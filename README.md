@@ -11,7 +11,8 @@ A psychoacoustic test that measures your minimum perceivable frequency differenc
 
 ```bash
 # Clone and enter the project
-cd pitch_discrimination_test
+git clone git@github.com:madSUNitist/pitch-discrimination-test.git
+cd pitch-discrimination-test
 
 # Install with uv (recommended)
 uv sync
@@ -31,16 +32,23 @@ python main.py
 uv run main.py
 ```
 
-When passing arguments through `uv run`, use `--` to separate them:
+When passing arguments through `uv run`, use `--` to separate uv options from script arguments:
 
 ```bash
-uv run main.py --ref 500 --start 10 --trials 40
+uv run main.py -- --ref 500 --start 10 --trials 40
 ```
 
 Or `uv run` the interpreter directly:
 
 ```bash
 uv run python main.py --ref 500 --start 10 --trials 40
+```
+
+### Example
+
+```bash
+# Use 500 Hz reference, start with 10 Hz delta, up to 40 trials
+python main.py --ref 500 --start 10 --trials 40
 ```
 
 ### Options
